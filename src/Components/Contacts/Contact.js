@@ -39,8 +39,7 @@ export const Contact = (props) => {
                     phone_number: response?.data?.data?.phone_number,
                     full_name: response?.data?.data?.full_name
                 })
-                setIsLoading(false);
-                console.log("value s", response)    
+                setIsLoading(false);    
             } catch (err) {
                 toast.error("Something went wrong")
             }
@@ -116,13 +115,13 @@ export const Contact = (props) => {
         values.phone_number = '';
     }
 
-    // if (loading) {
-    //     return (
-    //         <>
-    //             <h1 className='loading'> Loading.......</h1>
-    //         </>
-    //     )
-    // } else {
+    if (loading) {
+        return (
+            <>
+                <h1 className='loading'> Loading.......</h1>
+            </>
+        )
+    } else {
         return (
             <>
                 <PopUp
@@ -135,5 +134,5 @@ export const Contact = (props) => {
                 />
             </>
         )
-    // }
+    }
 }
