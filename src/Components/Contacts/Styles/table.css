@@ -1,0 +1,92 @@
+.table__container {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+.pagination__button {
+    margin-top: 5%;
+}
+
+.next__btn {
+    float: right;
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.previous__btn {
+    float: left;
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+table {
+    border: 2px solid black;
+    width: 800px;
+    height: 200px;
+}
+
+th {
+    border-bottom: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+.loading {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.edit__btn{
+    /* color: white; */
+    width: 20px;
+    /* background-color: black;  */
+    border: none;
+    color: rgb(73, 201, 73);
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.del__btn{
+    /* color: white1; */
+    width: 20px;
+    /* background-color: black; */
+    border: none;
+    color: rgb(224, 33, 33);
+    padding: 12px 27px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    /* background-color: #DE0F17; */
+}
+
+button[disabled]{
+    background-color: #cccccc;
+    color: #666666;
+}
