@@ -97,12 +97,12 @@ export const ContactList = () => {
                                     <td>{val.phone_number}</td>
                                     <td>
                                         <button className='edit__btn' value={val.id} onClick={() => handleEdit(val.id)}>
-                                            <i class="fa fa-pencil"></i>
+                                            <i className="fa fa-pencil"></i>
                                         </button>
                                     </td>
                                     <td>
                                         <button className='del__btn' value={val.id} onClick={() => handleDelete(val.id)}>
-                                            <i class="fa fa-trash"></i>
+                                            <i className="fa fa-trash"></i>
                                         </button>
                                     </td>
                                 </tr>

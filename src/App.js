@@ -17,7 +17,7 @@ export const App = (props) => {
     return (
         <>
             {
-                (location.pathname !== "/login") && (location.pathname !== "/register") && (location.pathname !== "/")
+                auth && (location.pathname !== "/login") && (location.pathname !== "/register") && (location.pathname !== "/")
                     ? <Header />
                     : ""
             }

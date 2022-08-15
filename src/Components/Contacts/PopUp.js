@@ -7,7 +7,7 @@ export const PopUp = (props) => {
         return (
             <>
                 <div id="contact-popup" className="contact__popup">
-                    <div class="contact__content">
+                    <div className="contact__content">
                         <span className="close" onClick={() => props.close()}>&times;</span>
                         
                         <form className="form-container">

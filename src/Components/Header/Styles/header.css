@@ -7,7 +7,7 @@ ul {
     list-style-type: none;
 }
 
-.topnav ul>li {
+.topnav ul>li:not(.sign_out) {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -16,7 +16,16 @@ ul {
     font-size: 17px;
 }
 
-.topnav ul>li:hover {
+.sign_out{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav ul>li:hover:not(.user__name) {
     background-color: #ddd;
     color: black;
 }

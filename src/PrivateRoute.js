@@ -1,9 +1,13 @@
-import { Navigate } from "react-router-dom";
+import { useEffect } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const PrivateRoute = ({ auth, children }) => {
-    if(!auth){
-        <Navigate to="/login" replace />
-    }
+    const navigate = useNavigate();
+    useEffect(() => {
+        if (!auth) {
+            navigate('/login',{replace: true})
+        }
+    },[])
     return children;
 };
 
